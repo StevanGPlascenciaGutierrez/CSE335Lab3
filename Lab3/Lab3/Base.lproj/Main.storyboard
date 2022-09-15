@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElD-SS-jDr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Favorite Movies" id="aei-hy-McU">
+                                        <barButtonItem key="leftBarButtonItem" image="trash" catalog="system" id="62s-Dc-PkI"/>
+                                        <barButtonItem key="rightBarButtonItem" image="plus.circle" catalog="system" id="z7P-xy-Anq"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xpv-Mp-YvQ">
+                                <rect key="frame" x="258" y="187" width="97" height="34.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCq-Gc-O2Q">
+                                <rect key="frame" x="88" y="194" width="38" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reK-Xy-siD">
+                                <rect key="frame" x="258" y="321" width="97" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="97" id="CPF-8q-R9v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ticket Sale:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT0-Ek-7Cd">
+                                <rect key="frame" x="63" y="327.5" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Genre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q3t-B7-t9T">
+                                <rect key="frame" x="258" y="255" width="97" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeI-Nh-eL3">
+                                <rect key="frame" x="81.5" y="261.5" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome To The Favorite Movies App!" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6a9-CO-p3X">
+                                <rect key="frame" x="62" y="124" width="290" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="454-3q-kr0">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Search" image="magnifyingglass.circle" catalog="system" width="139" id="feW-5j-DYF"/>
+                                    <barButtonItem image="arrowshape.turn.up.backward" catalog="system" width="60" style="plain" id="L7d-vF-Hm4"/>
+                                    <barButtonItem image="arrowshape.turn.up.right" catalog="system" width="145" style="plain" id="PNc-KC-XPn"/>
+                                    <barButtonItem image="pencil.circle" catalog="system" width="159" style="plain" id="Rd9-UQ-IIO"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fT0-Ek-7Cd" firstAttribute="top" secondItem="FeI-Nh-eL3" secondAttribute="bottom" constant="45" id="1K2-Mr-VFA"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="centerY" secondItem="Xpv-Mp-YvQ" secondAttribute="centerY" id="1j7-mq-wBc"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="88" id="3FO-zD-JSB"/>
+                            <constraint firstItem="reK-Xy-siD" firstAttribute="leading" secondItem="Xpv-Mp-YvQ" secondAttribute="leading" id="97b-4z-zkm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="reK-Xy-siD" secondAttribute="trailing" constant="59" id="B3A-qM-WJz"/>
+                            <constraint firstItem="fT0-Ek-7Cd" firstAttribute="centerY" secondItem="reK-Xy-siD" secondAttribute="centerY" id="Dia-oy-wjG"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="187" id="EhQ-K9-sS0"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="centerX" secondItem="fT0-Ek-7Cd" secondAttribute="centerX" id="Omt-qq-fhI"/>
+                            <constraint firstItem="reK-Xy-siD" firstAttribute="trailing" secondItem="Xpv-Mp-YvQ" secondAttribute="trailing" id="UZi-tq-9IT"/>
+                            <constraint firstItem="reK-Xy-siD" firstAttribute="top" secondItem="Q3t-B7-t9T" secondAttribute="bottom" constant="32" id="Vct-TM-2bC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="reK-Xy-siD" secondAttribute="bottom" constant="507" id="XVv-jX-3qw"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="top" secondItem="ElD-SS-jDr" secondAttribute="bottom" constant="99" id="azH-gQ-yF4"/>
+                            <constraint firstItem="wCq-Gc-O2Q" firstAttribute="centerX" secondItem="FeI-Nh-eL3" secondAttribute="centerX" id="ln1-25-ZfV"/>
+                            <constraint firstItem="reK-Xy-siD" firstAttribute="trailing" secondItem="Q3t-B7-t9T" secondAttribute="trailing" id="mKA-kO-IDg"/>
+                            <constraint firstItem="FeI-Nh-eL3" firstAttribute="top" secondItem="wCq-Gc-O2Q" secondAttribute="bottom" constant="54" id="o4r-QN-IKO"/>
+                            <constraint firstItem="reK-Xy-siD" firstAttribute="leading" secondItem="Q3t-B7-t9T" secondAttribute="leading" id="qQN-9f-SpJ"/>
+                            <constraint firstItem="ElD-SS-jDr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSD-qf-vVD"/>
+                            <constraint firstItem="Xpv-Mp-YvQ" firstAttribute="top" secondItem="ElD-SS-jDr" secondAttribute="bottom" constant="92" id="xPG-3q-bXM"/>
+                            <constraint firstItem="ElD-SS-jDr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zaz-qw-157"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.backward" catalog="system" width="128" height="106"/>
+        <image name="arrowshape.turn.up.right" catalog="system" width="128" height="106"/>
+        <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
